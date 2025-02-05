@@ -22,9 +22,6 @@ public:
         return max(max(lh,rh)+root->val,0);
     }
     int maxPathSum(TreeNode* root){
-        if(root->left ==NULL && root->right==NULL){
-            return root->val;
-        }
         helper(root);
         return ans;
     }
